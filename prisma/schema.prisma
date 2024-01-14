@@ -18,3 +18,10 @@ model users {
   image     String
   createdAt DateTime @default(now())
 }
+
+model visit {
+  userId    Int
+  location  String
+  start     DateTime
+  end       DateTime
+}

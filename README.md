@@ -55,3 +55,36 @@ pnpm dev
 ```
 
 Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples) ([Documentation](https://nextjs.org/docs/deployment)).
+
+
+
+## Logging stuff
+
+
+
+
+Install pnpm with npm
+
+npm install -g pnpm
+
+Start server
+
+pnpm run dev
+
+Create .env file (ask for vars)
+
+source ~/.zshrc or whatever if pnpm is missing stuff
+
+pnpm prisma generate
+
+migration example: https://vercel.com/docs/storage/vercel-postgres/using-an-orm#prisma-migrate
+
+pnpm prisma migrate dev --name init
+
+prisma cli: https://www.prisma.io/docs/orm/tools/prisma-cli
+
+getting started: https://www.prisma.io/docs/orm/prisma-migrate/getting-started
+
+vercel prisma integration using an orm: https://vercel.com/docs/storage/vercel-postgres/using-an-orm#prisma
+
+prisma deploy to vercel: https://www.prisma.io/docs/orm/prisma-client/deployment/serverless/deploy-to-vercel
