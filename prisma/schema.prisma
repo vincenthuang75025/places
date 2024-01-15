@@ -20,7 +20,7 @@ model users {
 }
 
 model visit {
-  userId    Int
+  id        Int     @id @default(autoincrement())
   location  String
   start     DateTime
   end       DateTime
