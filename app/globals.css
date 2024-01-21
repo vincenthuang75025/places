@@ -7,8 +7,10 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,500&family=IBM+Plex+Mono&family=Jost:ital,wght@0,300;0,400;1,300;1,400&family=Permanent+Marker&family=Public+Sans:wght@100;400&family=Reenie+Beanie&display=swap");
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: #6100FF;
+  background: #6100ff;
+  font-family: "IBM Plex Mono", monospace;
 }
