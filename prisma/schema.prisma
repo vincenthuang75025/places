@@ -18,7 +18,7 @@ model User {
   email     String   @unique
   image     String
   createdAt DateTime @default(now())
-  Visit     Visit[]
+  visits     Visit[]
 }
 
 model Visit {
