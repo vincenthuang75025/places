@@ -12,7 +12,7 @@ export const dynamic = 'force-dynamic'
 export default function Home() {
   async function createRecords() {
     'use server';
-    const user = await prisma.users.create({
+    const user = await prisma.user.create({
     data: {
       email: 'aayushgupta05@gmail.com',
       name: 'Aayush Gupta',
