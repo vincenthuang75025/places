@@ -1,9 +1,9 @@
+"use client";
 // @ts-ignore
-import { RangeDatePicker } from 'react-google-flight-datepicker';
-import 'react-google-flight-datepicker/dist/main.css';
+import RangeDatePicker from '../../components/RangeDatePicker.js';
+import '../../components/styles.scss';
 
-
-export default function Page() {
+const Page2 = () => {
 
     const onDateChange = (startDate: Date, endDate: Date) => {
         console.log(startDate, endDate)
@@ -24,3 +24,6 @@ export default function Page() {
     startWeekDay="monday"
   />
 }
+
+
+export default Page2;
