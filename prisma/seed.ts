@@ -1,46 +1,37 @@
-import prisma from '../lib/prisma'
+import prisma from "../lib/prisma";
 
 async function main() {
   const response = await Promise.all([
     prisma.user.upsert({
-      where: { email: 'rauchg@vercel.com' },
+      where: { email: "aayushgupta05@gmail.com" },
       update: {},
       create: {
-        name: 'Guillermo Rauch',
-        email: 'rauchg@vercel.com',
+        name: "Aayush Gupta",
+        email: "aayushgupta05@gmail.com",
         image:
-          'https://images.ctfassets.net/e5382hct74si/2P1iOve0LZJRZWUzfXpi9r/9d4d27765764fb1ad7379d7cbe5f1043/ucxb4lHy_400x400.jpg',
+          "https://io0-questions.s3.us-west-2.amazonaws.com/2024/1d07c531f750c927a03d9bfa57c03488.png",
       },
     }),
+
     prisma.user.upsert({
-      where: { email: 'lee@vercel.com' },
+      where: { email: "raphael.hotter@gmail.com" },
       update: {},
       create: {
-        name: 'Lee Robinson',
-        email: 'lee@vercel.com',
+        name: "Raffi Hotter",
+        email: "raphael.hotter@gmail.com",
         image:
-          'https://images.ctfassets.net/e5382hct74si/4BtM41PDNrx4z1ml643tdc/7aa88bdde8b5b7809174ea5b764c80fa/adWRdqQ6_400x400.jpg',
+          "https://io0-questions.s3.us-west-2.amazonaws.com/2024/a23b98fd66a0c2dfed01b6b7e855dccb.png",
       },
     }),
-    await prisma.user.upsert({
-      where: { email: 'stey@vercel.com' },
-      update: {},
-      create: {
-        name: 'Steven Tey',
-        email: 'stey@vercel.com',
-        image:
-          'https://images.ctfassets.net/e5382hct74si/4QEuVLNyZUg5X6X4cW4pVH/eb7cd219e21b29ae976277871cd5ca4b/profile.jpg',
-      },
-    }),
-  ])
-  console.log(response)
+  ]);
+  console.log(response);
 }
 main()
   .then(async () => {
-    await prisma.$disconnect()
+    await prisma.$disconnect();
   })
   .catch(async (e) => {
-    console.error(e)
-    await prisma.$disconnect()
-    process.exit(1)
-  })
+    console.error(e);
+    await prisma.$disconnect();
+    process.exit(1);
+  });
