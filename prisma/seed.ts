@@ -17,6 +17,7 @@ async function main() {
             end: new Date("2024-03-24T00:00:00.000Z"),
           },
         },
+        hash: "aayush",
       },
     }),
     prisma.user.upsert({
@@ -34,6 +35,7 @@ async function main() {
             end: new Date("2024-02-01T00:00:00.000Z"),
           },
         },
+        hash: "justin",
       },
     }),
     prisma.user.upsert({
@@ -51,6 +53,7 @@ async function main() {
             end: new Date("2024-02-01T00:00:00.000Z"),
           },
         },
+        hash: "jacky",
       },
     }),
 
@@ -62,6 +65,7 @@ async function main() {
         email: "raphael.hotter@gmail.com",
         image:
           "https://io0-questions.s3.us-west-2.amazonaws.com/2024/a23b98fd66a0c2dfed01b6b7e855dccb.png",
+        hash: "raffi",
       },
     }),
   ]);
